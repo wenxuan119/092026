@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+function validateForm() {
+    // Check username - cannot be empty
+    let x = document.LoginForm.username.value;
+    if (x.trim() == "") {
+        alert("Please enter your username!");
+        return false;
+    }
+
+    // Check password - cannot be empty
+    let y = document.LoginForm.password.value;
+    if (y == "") {
+        alert("Please enter your password!");
+        return false;
+    }
+
+    // Check password length - minimum 6 characters
+    if (y.length < 6) {
+        alert("Password must contain at least 6 characters!");
+        return false;
+    }
+
+    alert("Validation successful! This is a demo login page.");
+    return false; // Demo only: no server-side login
+}
+</script>
+</head>
+<body>
+<div class="login-card">
+    <h2>Login Page</h2>
+    <p>Welcome back! Please login.</p>
+
+    <form name="LoginForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter username">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+
+        <input type="submit" value="Login">
+    </form>
+</div>
+</body>
+</html>
