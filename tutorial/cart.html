@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart - 119 Handmade Store</title>
+<link rel="icon" href="logo.jpeg" type="image/jpeg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <img src="logo.jpeg" alt="119 Handmade Store Logo">
+    <h1>119 Handmade Store</h1>
+    <p>HANDMADE WITH LOVE</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="cart.html">Cart 🛒</a>
+</nav>
+
+<!-- Main Section -->
+<main>
+
+    <section class="cart-section">
+
+        <h2>My Shopping Cart</h2>
+
+        <p>Review your selected handmade products.</p>
+
+        <!-- Cart Items -->
+        <div id="cart-items">
+
+            <p>Your shopping cart is empty.</p>
+
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+
+            <h3>Order Summary</h3>
+
+            <p>
+                Subtotal:
+                RM <span id="subtotal">0.00</span>
+            </p>
+
+            <p>
+                Shipping:
+                RM <span id="shipping">0.00</span>
+            </p>
+
+            <hr>
+
+            <h3>
+                Total: RM <span id="total">0.00</span>
+            </h3>
+
+            <button onclick="checkout()">
+                Checkout
+            </button>
+
+            <a href="shop.html" class="continue-button">
+                Continue Shopping
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <h3>119 Handmade Store</h3>
+    <p>Handmade with love, created with care.</p>
+    <p>© 2026 119 Handmade Store. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
