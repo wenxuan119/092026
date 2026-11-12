@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Details - 119 Handmade Store</title>
+<link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <img src="images/logo.jpeg" alt="119 Handmade Store Logo">
+    <h1>119 Handmade Store</h1>
+    <p>HANDMADE WITH LOVE</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="cart.html">Cart 🛒</a>
+</nav>
+
+<main>
+
+    <section class="details-section">
+
+        <h2>Product Details</h2>
+        <p>Discover our handmade creations.</p>
+
+        <!-- Product 1 -->
+        <div class="details-card" id="perler">
+
+            <img src="images/perler.jpg" alt="Perler Beads">
+
+            <div class="details-info">
+                <h3>Perler Beads</h3>
+
+                <h4>RM 12.00</h4>
+
+                <p>
+                    Colourful handmade bead crafts
+                    with cute and creative designs.
+                    Each piece is carefully made
+                    with love and creativity.
+                </p>
+
+                <label>Quantity:</label>
+                <input type="number" id="qty1"
+                value="1" min="1">
+
+                <button onclick="addToCart('Perler Beads', 12, 'qty1')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Product 2 -->
+        <div class="details-card" id="crochet">
+
+            <img src="images/crochet.jpg" alt="Crochet">
+
+            <div class="details-info">
+                <h3>Crochet</h3>
+
+                <h4>RM 25.00</h4>
+
+                <p>
+                    Lovely handmade crochet
+                    creations with unique designs.
+                    Perfect for gifts and decorations.
+                </p>
+
+                <label>Quantity:</label>
+                <input type="number" id="qty2"
+                value="1" min="1">
+
+                <button onclick="addToCart('Crochet', 25, 'qty2')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Product 3 -->
+        <div class="details-card" id="puzzle">
+
+            <img src="images/puzzle.png" alt="Puzzle">
+
+            <div class="details-info">
+                <h3>Puzzle</h3>
+
+                <h4>RM 15.00</h4>
+
+                <p>
+                    Creative puzzle crafts that
+                    bring fun and enjoyment.
+                    A special handmade collection.
+                </p>
+
+                <label>Quantity:</label>
+                <input type="number" id="qty3"
+                value="1" min="1">
+
+                <button onclick="addToCart('Puzzle', 15, 'qty3')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Product 4 -->
+        <div class="details-card" id="pipecleaner">
+
+            <img src="images/pipecleaner.jpg"
+            alt="Pipe Cleaner Crafts">
+
+            <div class="details-info">
+                <h3>Pipe Cleaner Crafts</h3>
+
+                <h4>RM 18.00</h4>
+
+                <p>
+                    Beautiful handmade flowers
+                    and colourful decorations.
+                    Each design is made with care.
+                </p>
+
+                <label>Quantity:</label>
+                <input type="number" id="qty4"
+                value="1" min="1">
+
+                <button onclick="addToCart('Pipe Cleaner Crafts', 18, 'qty4')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <a href="shop.html" class="back-button">
+            Back to Shop
+        </a>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <h3>119 Handmade Store</h3>
+    <p>Handmade with love, created with care.</p>
+    <p>© 2026 119 Handmade Store. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
